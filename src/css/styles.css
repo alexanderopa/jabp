@@ -1,0 +1,62 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Full-page Video Background */
+#video-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Sends video to the background */
+}
+
+/* Fallback Background (if video fails to load) */
+#fallback-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/vegas_lambo3.png') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -2;
+}
+
+/* Centered Content */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Vegas 2025 Title */
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+}
+
+/* Subtitle Question */
+.question-text {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+/* Form */
+.content
