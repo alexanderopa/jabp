@@ -49,6 +49,22 @@
     font-weight: bold;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2; /* Ensures compact spacing */
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 32px; /* Reduce size for tablets */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 24px; /* Smaller size for mobile */
+        line-height: 1.1; /* Adjust line spacing */
+    }
 }
 
 /* Subtitle Question */
